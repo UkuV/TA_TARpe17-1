@@ -46,7 +46,10 @@ namespace Kangelased
 			return Nimi + " hoiab " + Asukoht + " turvalisena.";
 		}
 
-        
+        public int Rünnak() {
+            Random r = new Random();
+            return r.Next();
+        }
         
         
 	}
