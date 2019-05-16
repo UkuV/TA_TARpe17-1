@@ -21,16 +21,21 @@ namespace Kangelased
 		}
         public Kangelane(string Nimi, string SuperNimi, string Võime)
         {
-            this.Nimi = Nimi;
-            this.SuperNimi = SuperNimi;
-            this.Võime = Võime;
+            _Nimi = Nimi;
+            _SuperNimi = SuperNimi;
+            _Võime = Võime;
         }
 
+        public string AnnaNimi() {return _Nimi; }
+        public string AnnaSuperNimi() {  return _SuperNimi; }
+        public string AnnaVõime() { return _Võime; }
+
+        public abstract void VõiduKõne();
 
         public string Nimi { get => _Nimi; set => _Nimi = value; }
 		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
-        public string SuperNimi { get => _SuperNimi; set => _SuperNimi = value; }
-        public string Võime { get => _Võime; set => _Võime = value; }
+        
+
 
         public virtual int Päästa(int Ohustatuid)
 		{
@@ -40,16 +45,7 @@ namespace Kangelased
 		{
 			return Nimi + " hoiab " + Asukoht + " turvalisena.";
 		}
-        public string AnnaNimi(string Nimi) {
-            return Nimi;
-        }
-        public string AnnaSuperNimi( string SuperNimi) {
-            return SuperNimi;
-        }
-        public string AnnaVõime(string Võime ) {
-            return Võime;
-        }
-        public abstract void VõiduKõne();
+
         
         
         
