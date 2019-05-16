@@ -13,15 +13,21 @@ namespace Kangelased
         private string _SuperNimi;
         private string _Võime;
 
-        public Kangelane(string Nimi, string Asukoht, string SuperNimi, string Võime)
+        public Kangelane(string Nimi, string Asukoht)
 		{
 			this.Nimi = Nimi;
 			this.Asukoht = Asukoht;
+
+		}
+        public Kangelane(string Nimi, string SuperNimi, string Võime)
+        {
+            this.Nimi = Nimi;
             this.SuperNimi = SuperNimi;
             this.Võime = Võime;
-		}
+        }
 
-		public string Nimi { get => _Nimi; set => _Nimi = value; }
+
+        public string Nimi { get => _Nimi; set => _Nimi = value; }
 		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
         public string SuperNimi { get => _SuperNimi; set => _SuperNimi = value; }
         public string Võime { get => _Võime; set => _Võime = value; }
