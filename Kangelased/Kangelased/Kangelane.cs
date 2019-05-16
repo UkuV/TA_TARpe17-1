@@ -50,6 +50,7 @@ namespace Kangelased
             Random r = new Random();
             return r.Next();
         }
+        abstract public void KasutaVõimet();
         
         
 	}
