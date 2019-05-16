@@ -31,5 +31,7 @@ namespace Kangelased
 		{
 			Console.WriteLine("Hello World");
 		}
-	}
+        public override void VõiduKõne() { }
+    }
+    
 }

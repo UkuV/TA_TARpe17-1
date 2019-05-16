@@ -10,7 +10,7 @@ namespace Kangelased
 	{
 		private double _Osavus;
 
-		public SuperKangelane(string Nimi,string Asukoht):base(Nimi,Asukoht)
+		public SuperKangelane(string Nimi,string Asukoht, string SuperNimi, string Võime):base(Nimi,Asukoht,SuperNimi,Võime)
 		{
 			Random r = new Random();
 			_Osavus = r.Next(1,5)+r.NextDouble();
@@ -23,5 +23,6 @@ namespace Kangelased
 		{
 			return base.ToString()+" ja ta on selles "+_Osavus+" protsenti osavam kui teised.";
 		}
-	}
+        public override void VõiduKõne() { }
+    }
 }
